@@ -380,6 +380,16 @@ button:hover {
   padding-right: 5px;
 }
 
+.single-progressbar .title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.single-progressbar {
+  margin-bottom: 30px;
+}
+
 .service-item {
   margin-bottom: 10px;
   padding: 50px;
