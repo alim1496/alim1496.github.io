@@ -210,6 +210,7 @@ html {
 .menu {
   left: 10%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
   background-color: #a43f49;
   box-sizing: border-box;
@@ -646,6 +647,21 @@ section.contact-me {
   box-shadow: none;
 }
 
+#contact input::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+#contact input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+#contact input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
 #contact textarea {
   background-color: rgba(250, 250, 250, 0.1);
   border: 1px solid rgba(250, 250, 250, 1);
@@ -667,6 +683,28 @@ section.contact-me {
 
 #contact {
   text-align: center;
+}
+
+#contact textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+#contact textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+
+#contact textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+
+#contact textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+#contact textarea::placeholder {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1680px) {

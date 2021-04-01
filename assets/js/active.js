@@ -1,41 +1,47 @@
-(function($) {
-    'use strict';
+(function ($) {
+  "use strict";
 
-    $('.html').rProgressbar({
-        percentage: 80,
-        fillBackgroundColor: '#1abc9c'
-    });
-    $('.css').rProgressbar({
-        percentage: 90,
-        fillBackgroundColor: '#2ecc71'
-    });
+  $(".html").rProgressbar({
+    percentage: 90,
+  });
 
+  $(".css").rProgressbar({
+    percentage: 90,
+  });
 
+  $(".php").rProgressbar({
+    percentage: 75,
+  });
 
-    $('.php').rProgressbar({
-        percentage: 75,
-        fillBackgroundColor: '#9b59b6'
-    });
+  $(".javascript").rProgressbar({
+    percentage: 85,
+  });
 
+  $(".react").rProgressbar({
+    percentage: 85,
+  });
 
+  $(".java").rProgressbar({
+    percentage: 70,
+  });
 
-    $('.javascript').rProgressbar({
-        percentage: 65,
-        fillBackgroundColor: '#34495e'
-    });
+  $(".kotlin").rProgressbar({
+    percentage: 50,
+  });
 
+  $(".android").rProgressbar({
+    percentage: 75,
+  });
 
+  $(".node").rProgressbar({
+    percentage: 50,
+  });
 
-    $('.jquery').rProgressbar({
-        percentage: 95,
-        fillBackgroundColor: '#f1c40f',
-        backgroundColor: '#e67e22'
-    });
+  $(".django").rProgressbar({
+    percentage: 50,
+  });
 
-
-
-
-
-
-
+  $(".python").rProgressbar({
+    percentage: 90,
+  });
 })(jQuery);
