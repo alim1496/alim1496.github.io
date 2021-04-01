@@ -27,6 +27,15 @@ https://templatemo.com/tm-531-reflux
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
     <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_wDt7EM3SsN7KFuyUcLRNv");
+      })();
+    </script>
   </head>
 
   <body>
@@ -433,12 +442,12 @@ https://templatemo.com/tm-531-reflux
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="" method="post">
+                <form id="contact">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
                         <input
-                          name="name"
+                          name="user_name"
                           type="text"
                           class="form-control"
                           id="name"
@@ -450,7 +459,7 @@ https://templatemo.com/tm-531-reflux
                     <div class="col-md-6">
                       <fieldset>
                         <input
-                          name="email"
+                          name="user_email"
                           type="text"
                           class="form-control"
                           id="email"
@@ -559,6 +568,29 @@ https://templatemo.com/tm-531-reflux
 
       $(window).scroll(function () {
         checkSection();
+      });
+
+      $("#contact").on("submit", function (event) {
+        event.preventDefault(); // prevent reload
+
+        var formData = new FormData(this);
+        formData.append("service_id", "service_w434e2n");
+        formData.append("template_id", "template_vvefkkw");
+        formData.append("user_id", "user_wDt7EM3SsN7KFuyUcLRNv");
+
+        $.ajax("https://api.emailjs.com/api/v1.0/email/send-form", {
+          type: "POST",
+          data: formData,
+          contentType: false, // auto-detection
+          processData: false, // no need to parse formData to string
+        })
+          .done(function () {
+            alert("Your mail is sent!");
+            window.location.reload();
+          })
+          .fail(function (error) {
+            alert("Oops... " + JSON.stringify(error));
+          });
       });
     </script>
   </body>
