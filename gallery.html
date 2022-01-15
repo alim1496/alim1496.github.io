@@ -13,9 +13,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-        <title>M A Alim - Software Developer</title>
+        <title>Gallery | M A Alim</title>
       
-        <meta property="og:title" content="M A Alim - Software Developer" />
+        <meta property="og:title" content="Gallery | M A Alim" />
         <meta property="og:type" content="profile" />
         <meta property="og:image"
           content="https://firebasestorage.googleapis.com/v0/b/quotesworld-5b63f.appspot.com/o/profile_pictures%2Fog_img_profile.jpg?alt=media&token=59b6d7d5-988b-4cb5-9e64-030d9d90d885" />
@@ -29,7 +29,7 @@
       
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:url" content="https://alim1496.github.io/" />
-        <meta property="og:title" content="M A Alim - Software Developer" />
+        <meta property="og:title" content="Gallery | M A Alim" />
         <meta property="og:description" content="Software engineering professional with more than three years of
           experience in both large scale web and mobile app development. I
           love to learn new technologies, write clean code and follow the
@@ -60,31 +60,29 @@
                         <a class="common-link" href="certifications.html">Certifications</a>
                     </li>
                     <li class="left-spaced">    
-                        <a class="common-link" href="gallery.html">Gallery</a>
+                        <a class="common-link selected" href="gallery.html">Gallery</a>
                     </li>
                 </ul>
             </section>
         </nav>
         <div class="content">
             <div class="container centered">
-                <div class="text-center">
-                    <img src="assets/images/author-image.jpg" alt="alim1496" class="img-circular" />
-                    <h1>M A Alim</h1>
-                    <h2>Tech Enthusiast - Believer - Traveller</h2>
-                    <ul class="horizontal-list spaced-around">
-                        <li>
-                            <a class="common-link" href="https://www.linkedin.com/in/m-a-alim-2b481b7b/">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a class="common-link" href="https://github.com/alim1496">GitHub</a>
-                        </li>
-                        <li>
-                            <a class="common-link" href="https://twitter.com/alim1496">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="common-list" id="list-img"></ul>
             </div>
         </div>
     </main>
+    <script>
+        fetch("./assets/jsons/gallery.json")
+        .then((res) => res.json())
+        .then((data) => {
+            const ul = document.querySelector("#list-img");
+            let lis = "";
+            data.forEach(element => {
+                lis += `<li class="img-list-item col-5"><img src="${element.src}" alt="${element.alt}" title="${element.alt}" class="list-img" /></li>`;
+            });
+            ul.innerHTML = lis;
+        })
+        .catch((error) => console.log(error));
+    </script>
 </body>
 </html>

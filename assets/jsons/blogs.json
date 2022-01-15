@@ -1,0 +1,57 @@
+[
+    {
+        "title": "CSS preloaders from scratch",
+        "link": "https://dev.to/alim1496/css-preloaders-from-scratch-n92",
+        "date": "21/06/2021"
+    },
+    {
+        "title": "Should I start using a CSS preprocessor?",
+        "link": "https://dev.to/alim1496/should-i-start-using-a-css-preprocessor-41dn",
+        "date": "25/06/2021"
+    },
+    {
+        "title": "Managing external libraries in AWS lambda functions",
+        "link": "https://dev.to/alim1496/managing-external-libraries-in-aws-lambda-functions-1g0m",
+        "date": "04/07/2021"
+    },
+    {
+        "title": "VS Code Thunder Client: An awesome alternative to Postman",
+        "link": "https://dev.to/alim1496/vs-code-thunder-client-an-awesome-alternative-to-postman-1a02",
+        "date": "05/07/2021"
+    },
+    {
+        "title": "Avoid using inline css styles",
+        "link": "https://dev.to/alim1496/avoid-using-inline-css-styles-5b6p",
+        "date": "20/07/2021"
+    },
+    {
+        "title": "Some interesting facts about javascript",
+        "link": "https://dev.to/alim1496/some-interesting-facts-about-javascript-1apg",
+        "date": "28/07/2021"
+    },
+    {
+        "title": "An overview of TypeORM",
+        "link": "https://dev.to/alim1496/an-overview-of-typeorm-1cp2",
+        "date": "05/10/2021"
+    },
+    {
+        "title": "Its time to learn Typescript",
+        "link": "https://dev.to/alim1496/its-time-to-learn-typescript-2a11",
+        "date": "12/10/2021"
+    },
+    {
+        "title": "React with Typescript",
+        "link": "https://dev.to/alim1496/react-with-typescript-1gp5",
+        "date": "19/10/2021"
+    },
+    {
+        "title": "My first react native app from scratch",
+        "link": "https://dev.to/alim1496/my-first-react-native-app-from-scratch-fm8",
+        "date": "08/12/2021"
+    },
+    {
+        "title": "Developing a simple URL shortener with node, express, ejs and mysql",
+        "link": "https://dev.to/alim1496/developing-a-simple-url-shortener-with-node-express-ejs-and-mysql-3o44",
+        "date": "17/12/2021"
+    }
+]
