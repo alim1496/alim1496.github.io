@@ -37,7 +37,7 @@ body {
 
 .col-5 {
     width: 30%;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 .centered {
@@ -95,7 +95,7 @@ body {
 .cert-item {
     margin-bottom: 1.5rem;
     width: 35%;
-    min-width: 400px;
+    min-width: 300px;
     color: #353b50;
 }
 
@@ -158,3 +158,62 @@ body {
 .common-para {
     margin: 0.4rem 0;
 }
+
+.desktop-only {
+    display: flex;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.title-link {
+    padding-left: 0.3rem;
+}
+
+.hamburger {
+    transform: rotate(90deg);
+    padding: 0.3rem;
+}
+
+.menu-modal {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100vw);
+}
+
+.show-menu-modal {
+    transform: translateX(0vw);
+    transition: transform .2s ease-out;
+}
+
+.vertical-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.closer {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.bottom-spaced {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .spaced-around {
+        justify-content: unset;
+    }
+  }
