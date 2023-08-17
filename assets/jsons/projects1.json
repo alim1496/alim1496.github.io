@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Ridmik News Portal",
+        "description": "Ridmik News is the most used news app in Bangladesh. This is the web version of that app. Here a user can read all the latest news having different categories and also feature articles. The site is fully responsive built on React, Redux, Stylus and server side rendering.",
+        "link": "https://ridmik.news/"
+    },
+    {
+        "title": "Ridmik News Android",
+        "description": "Ridmik News provides the best coverage of current events in Bangladesh and around the globe. All the news are curated and personalized for the user. It has some awesome features like playing quiz, reading feature articles, watching entertaining videos, listening to news, getting weather news, horoscope, sports schedule and so on. I mainly took part in developing latest news list display, live news, weather news, feature articles, managing notifications. I am also responsible for adding new features and fixing the bugs.",
+        "link": "https://play.google.com/store/apps/details?id=ridmik.news"
+    },
+    {
+        "title": "Boitoi",
+        "description": "Boitoi is a digital publishing platform with a focus on Bangla eBook publishing. Boitoi comes with a great eBook reader and an ebook store to help you find and read your favourite books easily. This web app is mainly an ebook store. It has been developed with react, redux, stylus.",
+        "link": "https://boitoi.com.bd/"
+    },
+    {
+        "title": "Boitoi Writer Panel",
+        "description": "Using this web based editor, a user can focus on his/her writing. We'll handle the rest. Thus the user can write and publish the book on Boitoi platform for FREE. With our powerful authoring panel and a smart editor, user can organize all of his/her books, track sales, write new books and seamlessly publish a new edition. Fast!",
+        "link": "https://writer.boitoi.com.bd/"
+    },
+    {
+        "title": "Bondhu Buzz Landing Page",
+        "description": "Bondhu Buzz is the safest and the most effective way to meet new people in Bangladesh. The app has been developed to make the safest friendship network in Bangladesh. I developed a fully responsive landing page for this app.",
+        "link": "https://bondhu.buzz/"
+    },
+    {
+        "title": "QuotesHub",
+        "description": "This is a web app containing almost 4000 quotes of famous people divided by different categories. It has been developed with react js and the back end api is developed with django rest framework and postgresql is used as database.",
+        "link": "https://quotes-hub.netlify.app/"
+    },
+    {
+        "title": "QuotesHub Android",
+        "description": "This App contains a good number of different types of Quotes from famous people that help you with your day success. This app is being developed with kotlin and following MVVM pattern with android architecture components.",
+        "link": "https://play.google.com/store/apps/details?id=com.appwiz.quoteshub"
+    },
+    {
+        "title": "Breaking Bad Lite",
+        "description": "An android application showing the characters, episodes, quotes and deaths from the renowned tv series Breaking Bad along with Better Call Saul. It has been developed with android architecture components like viewmodel, room persistent library, livedata. The development follows MVVM pattern. The data has been collected from Breaking Bad Free Api.",
+        "link": "https://github.com/alim1496/breaking-bad-lite"
+    },{
+        "title": "ToDo App",
+        "description": "A simple ToDo application developed with react native. It has got features like creating a task, showing the task list, editing the task, deleting the task and also checking/unchecking a task.",
+        "link": "https://github.com/alim1496/todo-app-react-native"
+    },{
+        "title": "Simple URL Shortener",
+        "description": "A URL shortener platform developed in express js along with mysql database. To render html content ejs has been used. Here a user can give a long URL as input and use the short form. On clicking the short form of URL, a user is redirected to the corresponding link.",
+        "link": "https://github.com/alim1496/url-shortener-express"
+    }
+]
