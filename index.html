@@ -103,7 +103,7 @@
 					<div class="space-y-2">
 						<div class="text-xl font-medium">Hello, I'm</div>
 						<div class="text-4xl font-extrabold">M A Alim</div>
-						<div class="flex space-x-2 text-xl">
+						<div class="flex space-x-2 text-xl flex-wrap">
 							<span>Software Engineer</span>
 							<span>|</span>
 							<span>Technical Writer</span>
@@ -147,49 +147,38 @@
 			<div id="about" class="text-center p-4">
 				<div class="text-2xl font-bold mb-4">About Me</div>
 				<div class="flex justify-center items-center">
-					<div class="grid grid-cols-2 grid-rows-2 gap-4">
+					<div class="grid lg:grid-cols-2 grid-rows-2 gap-4">
 						<div class="p-2 text-start max-w-md">
 							<div class="font-bold">Software Developer</div>
 							<div class="text-sm">
-								I am a software developer having more than 4 years of experience in developing web &
-								mobile applications.
-								Frontend development is my favorite part. Now a days I spend most of the time in
-								frontend development. Currently
-								I work at CuriX AG remotely as a frontend developer. I use React JS to develop user
-								interfaces.
+								Experienced software developer specializing in frontend development. Crafting web and
+								mobile applications for over 4 years. Passionate about creating seamless user
+								experiences and responsive interfaces. Let's bring your ideas to life through elegant
+								and dynamic designs.
 							</div>
 						</div>
 						<div class="p-2 text-start max-w-md">
 							<div class="font-bold">Open Source Contributor</div>
 							<div class="text-sm">
-								I am a software developer having more than 4 years of experience in developing web &
-								mobile applications.
-								Frontend development is my favorite part. Now a days I spend most of the time in
-								frontend development. Currently
-								I work at CuriX AG remotely as a frontend developer. I use React JS to develop user
-								interfaces.
+								Passionate open-source contributor, collaborating on diverse projects. Embracing the
+								coding community's ethos through code, docs, and support. Committed to making a positive
+								impact by sharing knowledge and fostering innovation. Let's build together!
 							</div>
 						</div>
 						<div class="p-2 text-start max-w-md">
 							<div class="font-bold">Technical Writer</div>
 							<div class="text-sm">
-								I am a software developer having more than 4 years of experience in developing web &
-								mobile applications.
-								Frontend development is my favorite part. Now a days I spend most of the time in
-								frontend development. Currently
-								I work at CuriX AG remotely as a frontend developer. I use React JS to develop user
-								interfaces.
+								Technical writer crafting insightful content. Sharing tech knowledge through engaging
+								blogs. Simplifying complexities and sparking understanding. Join me on a journey of
+								exploration through words.
 							</div>
 						</div>
 						<div class="p-2 text-start max-w-md">
 							<div class="font-bold">Content Creator</div>
 							<div class="text-sm">
-								I am a software developer having more than 4 years of experience in developing web &
-								mobile applications.
-								Frontend development is my favorite part. Now a days I spend most of the time in
-								frontend development. Currently
-								I work at CuriX AG remotely as a frontend developer. I use React JS to develop user
-								interfaces.
+								Creative content creator fueling curiosity. YouTube channel host, unraveling web
+								development intricacies and conquering coding challenges. Exploring the digital realm
+								one video at a time. Join me in mastering the art of coding and problem-solving.
 							</div>
 						</div>
 					</div>
@@ -200,7 +189,7 @@
 			<div id="projects" class="text-center p-4">
 				<div class="text-2xl font-bold mb-4">Projects</div>
 				<div class="flex justify-center items-center">
-					<div class="grid grid-cols-2 gap-4" id="proj-list">
+					<div class="grid lg:grid-cols-2 gap-4" id="proj-list">
 					</div>
 				</div>
 			</div>
@@ -209,7 +198,7 @@
 			<div id="certificates" class="text-center p-4">
 				<div class="text-2xl font-bold mb-4">Certifications</div>
 				<div class="flex justify-center items-center">
-					<div id="cert-list" class="grid grid-cols-3 gap-2"></div>
+					<div id="cert-list" class="grid lg:grid-cols-3 gap-2"></div>
 				</div>
 			</div>
 
@@ -255,11 +244,12 @@
 					(element.techs).forEach(con => {
 						tags += `<span>${con}</span>`;
 					});
-					lis += `<div class="text-start max-w-md border border-1 rounded-lg"><div class="py-2 px-4 text-xl font-medium bg-slate-800 text-white rounded-t-lg">${element.title}</div><div class="py-2 px-4"><span class="font-bold">${element.description}</span><div class="mt-1 flex flex-col text-sm">${cont}</div><div class="flex text-xs space-x-2 mt-1">${tags}</div></div></div>`;
+					lis += `<div class="text-start max-w-md border border-1 rounded-lg"><div class="py-2 px-4 text-xl font-medium bg-slate-800 text-white rounded-t-lg">${element.title}</div><div class="py-2 px-4"><span class="font-bold leading-tight">${element.description}</span><div class="mt-1 flex flex-col text-sm">${cont}</div><div class="flex text-xs space-x-2 mt-1">${tags}</div></div></div>`;
 				});
 				ul.innerHTML = lis;
 			})
 			.catch((error) => console.log(error));
+
 		// fetching certificates
 		fetch("./assets/jsons/cert.json")
 			.then((res) => res.json())
