@@ -58,7 +58,7 @@
 		<nav class="fixed top-0 left-0 right-0 shadow-md bg-white z-99">
 			<section class="flex justify-between py-4 px-8">
 				<a class="common-link title-link" href="index.html">alim1496</a>
-				<ul class="flex space-x-4">
+				<ul class="md:flex space-x-4 hidden">
 					<li class="left-spaced">
 						<a href="#about">About Me</a>
 					</li>
@@ -72,10 +72,23 @@
 						<a class="common-link" href="#contact">Contact</a>
 					</li>
 				</ul>
-				<div class="hidden mobile-only hamburger" onclick="showMenu()">|||</div>
+				<ul class="md:hidden space-x-4 flex">
+					<li class="left-spaced">
+						<a href="#about"><i class="fa-solid fa-user"></i></a>
+					</li>
+					<li class="left-spaced">
+						<a href="#projects"><i class="fa-solid fa-folder-closed"></i></a>
+					</li>
+					<li class="left-spaced">
+						<a href="#certificates"><i class="fa-solid fa-certificate"></i></a>
+					</li>
+					<li class="left-spaced">
+						<a class="common-link" href="#contact"><i class="fa-solid fa-envelope"></i></a>
+					</li>
+				</ul>
 			</section>
 		</nav>
-		<div class="hidden menu-modal mobile-only" id="vertical-menu">
+		<div class="hidden" id="vertical-menu">
 			<br /><br /><br /><br />
 			<ul class="vertical-list">
 				<li class="bottom-spaced closer" onclick="hideModal()">X</li>
@@ -99,18 +112,18 @@
 			<div class="min-h-screen w-full flex justify-center items-center">
 				<div class="grid lg:grid-cols-2 place-items-center">
 					<img src="assets/images/author-image.jpg" alt="alim1496"
-						class="w-72 h-72 rounded-[50%] border border-2 border-slate-800" />
-					<div class="space-y-2">
-						<div class="text-xl font-medium">Hello, I'm</div>
-						<div class="text-4xl font-extrabold">M A Alim</div>
-						<div class="flex space-x-2 text-xl flex-wrap">
-							<span>Software Engineer</span>
-							<span>|</span>
-							<span>Technical Writer</span>
-							<span>|</span>
-							<span>Content Creator</span>
+						class="md:w-72 md:h-72 w-48 h-48 rounded-[50%] border border-2 border-slate-800" />
+					<div class="space-y-2 md:text-start text-center">
+						<div class="md:text-lg text-md font-medium">Hello, I'm</div>
+						<div class="md:text-4xl text-xl font-extrabold">M A Alim</div>
+						<div class="md:flex space-x-2 md:text-lg text-md flex-wrap block">
+							<span class="block md:inline">Software Engineer</span>
+							<span class="hidden md:inline">|</span>
+							<span class="block md:inline">Technical Writer</span>
+							<span class="hidden md:inline">|</span>
+							<span class="block md:inline">Content Creator</span>
 						</div>
-						<ul class="flex space-x-4 items-center text-xl">
+						<ul class="flex space-x-4 items-center text-xl md:justify-start justify-center">
 							<li>
 								<a class="common-link" href="https://www.linkedin.com/in/m-a-alim-2b481b7b/">
 									<i class="fa-brands fa-linkedin"></i>
@@ -147,7 +160,7 @@
 			<div id="about" class="text-center p-4">
 				<div class="text-2xl font-bold mb-4">About Me</div>
 				<div class="flex justify-center items-center">
-					<div class="grid lg:grid-cols-2 grid-rows-2 gap-4">
+					<div class="grid md:grid-cols-2 grid-rows-2 lg:gap-4 md:gap-2">
 						<div class="p-2 text-start max-w-md">
 							<div class="font-bold">Software Developer</div>
 							<div class="text-sm">
@@ -189,7 +202,7 @@
 			<div id="projects" class="text-center p-4">
 				<div class="text-2xl font-bold mb-4">Projects</div>
 				<div class="flex justify-center items-center">
-					<div class="grid lg:grid-cols-2 gap-4" id="proj-list">
+					<div class="grid md:grid-cols-2 lg:gap-4 md:gap-2" id="proj-list">
 					</div>
 				</div>
 			</div>
@@ -198,7 +211,7 @@
 			<div id="certificates" class="text-center p-4">
 				<div class="text-2xl font-bold mb-4">Certifications</div>
 				<div class="flex justify-center items-center">
-					<div id="cert-list" class="grid lg:grid-cols-3 gap-2"></div>
+					<div id="cert-list" class="grid lg:grid-cols-3 lg:gap-2 md:grid-cols-2 md:gap-1"></div>
 				</div>
 			</div>
 
@@ -262,12 +275,7 @@
 				ul.innerHTML = lis;
 			})
 			.catch((error) => console.log(error));
-		function showMenu() {
-			document.querySelector("#vertical-menu").classList.add("show-menu-modal");
-		}
-		function hideModal() {
-			document.querySelector("#vertical-menu").classList.remove("show-menu-modal");
-		}
+		
 	</script>
 </body>
 
