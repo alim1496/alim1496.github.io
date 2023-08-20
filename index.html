@@ -48,6 +48,11 @@
 			scroll-behavior: smooth;
 			scroll-padding-top: 2.5rem;
 		}
+		.background {
+			z-index: -1;
+			position: absolute;
+			inset: 0;
+		}
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<script src="https://cdn.tailwindcss.com"></script>
@@ -55,9 +60,9 @@
 
 <body>
 	<main class="bg-white">
-		<nav class="fixed top-0 left-0 right-0 shadow-md bg-white z-99">
-			<section class="flex justify-between py-4 px-8">
-				<a class="common-link title-link" href="index.html">alim1496</a>
+		<nav class="fixed top-0 left-0 right-0 shadow-md bg-white z-999">
+			<section class="flex justify-between mx-auto py-4 px-8 max-w-screen-2xl">
+				<a href="#hero">alim1496</a>
 				<ul class="md:flex space-x-4 hidden">
 					<li class="left-spaced">
 						<a href="#about">About Me</a>
@@ -88,28 +93,10 @@
 				</ul>
 			</section>
 		</nav>
-		<div class="hidden" id="vertical-menu">
-			<br /><br /><br /><br />
-			<ul class="vertical-list">
-				<li class="bottom-spaced closer" onclick="hideModal()">X</li>
-				<li class="bottom-spaced">
-					<a class="common-link" href="blog.html">Blog</a>
-				</li>
-				<li class="bottom-spaced">
-					<a class="common-link" href="projects.html">Projects</a>
-				</li>
-				<li class="bottom-spaced">
-					<a class="common-link" href="certifications.html">Certifications</a>
-				</li>
-				<li class="bottom-spaced">
-					<a class="common-link" href="gallery.html">Gallery</a>
-				</li>
-			</ul>
-		</div>
 
 		<div class="container mx-auto">
 			<!-- Hero Section-->
-			<div class="min-h-screen w-full flex justify-center items-center">
+			<div id="hero" class="min-h-screen w-full flex justify-center items-center bg-[url('/assets/images/bg.gif')] bg-center">
 				<div class="grid lg:grid-cols-2 place-items-center">
 					<img src="assets/images/author-image.jpg" alt="alim1496"
 						class="md:w-72 md:h-72 w-48 h-48 rounded-[50%] border border-2 border-slate-800" />
@@ -154,6 +141,7 @@
 							class="border py-2 px-8 rounded bg-slate-800 text-white">More about me</button>
 					</div>
 				</div>
+				<canvas class="background"></canvas>
 			</div>
 
 			<!-- About Section-->
@@ -239,7 +227,6 @@
 		</div>
 
 		<footer class="text-center p-4 text-sm">©2023 M A Alim. All rights reserved.</footer>
-
 	</main>
 	<script>
 		// fetching projects
@@ -275,7 +262,16 @@
 				ul.innerHTML = lis;
 			})
 			.catch((error) => console.log(error));
-		
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+	<script>
+		window.onload = function () {
+			Particles.init({
+				selector: '.background',
+				connectParticles: true
+			});
+		};
 	</script>
 </body>
 

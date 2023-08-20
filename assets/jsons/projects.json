@@ -24,7 +24,7 @@
 		"title": "Ridmik News Admin Panel",
 		"description": "A panel facilitating management of news update, review, publish, managing quiz & other contents",
 		"contribution": ["Developed user interfaces for various features", "Implemented automated scrapper for news collection", "Integrated rest api data to the user interface"],
-		"techs": ["React JS", "|", "|", "Stylus", "|", "Spectre CSS"],
+		"techs": ["React JS", "|", "Stylus", "|", "Spectre CSS"],
 		"link": "https://ridmik.news/"
 	},
 	{
