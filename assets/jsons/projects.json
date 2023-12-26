@@ -44,9 +44,9 @@
 	{
 		"title": "QuotesHub",
 		"description": "Web portal containing 4000+ quotes of famous people",
-		"contribution": ["Backend api developed in Django rest framework", "PostgreSQL has been used to store data", "Responsie user interfaces developed with React"],
-		"techs": ["React JS", "|", "Django Rest Framework", "|", "PostgreSQL"],
-		"links": [{ "type": "working" }]
+		"contribution": ["Backend api developed in express js under node runtime", "MongoDB has been used to store data", "Frontend developed with next js & tailwind css"],
+		"techs": ["Next JS", "|", "Express JS", "|", "MongoDB", "|", "Tailwind"],
+		"links": [{ "type": "Demo", "link": "https://quoteshub.vercel.app/" }]
 	},
 	{
 		"title": "QuotesHub Android",

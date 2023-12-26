@@ -72,7 +72,7 @@
 					<li class="left-spaced">
 						<a class="common-link" href="#contact">Contact</a>
 					</li>
-					<li class="bg-slate-800 text-white text-sm px-4 py-1 rounded">
+					<li class="bg-slate-800 text-white text-sm px-4 py-1 rounded hover:opacity-85 hover:cursor-pointer">
 						<a class="common-link" href="https://alim-blog.vercel.app/">Blog</a>
 					</li>
 				</ul>
@@ -90,7 +90,7 @@
 						<a class="common-link" href="#contact"><i class="fa-solid fa-envelope"></i></a>
 					</li>
 					<li class="left-spaced">
-						<a class="common-link" href="https://alim-blog.vercel.app/"><i class="fa-solid fa-blog"></i></a>
+						<a class="common-link" href="https://alim-blog.vercel.app/"><i class="fa-solid fa-blog hover:opacity-85"></i></a>
 					</li>
 				</ul>
 			</section>
@@ -140,7 +140,7 @@
 							</li>
 						</ul>
 						<button onclick='window.location="#about"'
-							class="border py-2 px-8 rounded bg-slate-800 text-white">More about me</button>
+							class="border py-2 px-8 rounded bg-slate-800 text-white hover:opacity-85">More about me</button>
 					</div>
 				</div>
 			</div>
@@ -216,7 +216,7 @@
 						class="block w-full border border-1 border-slate-800 rounded-sm p-2" />
 					<textarea placeholder="Your message" class="w-full border border-1 border-slate-800 rounded-sm p-2"
 						rows="5"></textarea>
-					<button type="button" class="border py-2 px-8 rounded bg-slate-800 text-white">Send</button>
+					<button type="button" class="border py-2 px-8 rounded bg-slate-800 text-white hover:opacity-85">Send</button>
 				</form>
 				<div class="max-w-md mx-auto">
 					<hr />
@@ -250,7 +250,7 @@
 						if (link.type === 'internal' || link.type === 'working') {
 							links += "";
 						} else {
-							links += `<a href=${link.link}>${link.type}</a>`;
+							links += `<a class="hover:underline" href=${link.link}>${link.type}</a>`;
 						}
 					});
 					lis += `<div class="text-start max-w-md border border-1 rounded-lg"><div class="py-2 px-4 text-xl font-medium bg-slate-800 text-white rounded-t-lg">${element.title}</div><div class="py-2 px-4"><span class="font-bold leading-tight">${element.description}</span><div class="mt-1 flex flex-col text-sm">${cont}</div><div class="flex w-fit text-xs space-x-2 mt-1">${tags}</div><div class="mt-1 flex space-x-4 text-blue-500 text-xs">${links}</div></div></div>`;
@@ -266,7 +266,7 @@
 				const ul = document.querySelector("#cert-list");
 				let lis = "";
 				data.forEach(element => {
-					lis += `<div class="text-start max-w-xs border border-1 rounded-lg p-2"><div class="font-bold leading-5">${element.title}</div><div class="text-sm">${element.issue}</div><a class="text-xs text-blue-500" href="${element.link}">Credentials</a></div>`;
+					lis += `<div class="text-start max-w-xs border border-1 rounded-lg p-2"><div class="font-bold leading-5">${element.title}</div><div class="text-sm">${element.issue}</div><a class="text-xs text-blue-500 hover:underline" href="${element.link}">Credentials</a></div>`;
 				});
 				ul.innerHTML = lis;
 			})
