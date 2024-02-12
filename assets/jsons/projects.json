@@ -2,85 +2,251 @@
 	{
 		"title": "Ridmik News",
 		"description": "Bangladeshi online news portal containing all the latest news",
-		"contribution": ["Developed responsive user interfaces for various features", "Implemented server side rendering for better performance", "Integrated rest api data to the user interface"],
-		"techs": ["React JS", "|", "Redux", "|", "Stylus", "|", "Spectre CSS"],
-		"links": [{ "type": "Demo", "link": "https://ridmik.news/" }]
+		"contribution": [
+			"Developed responsive user interfaces for various features",
+			"Implemented server side rendering for better performance",
+			"Integrated rest api data to the user interface"
+		],
+		"techs": [
+			"React JS",
+			"|",
+			"Redux",
+			"|",
+			"Stylus",
+			"|",
+			"Spectre CSS"
+		],
+		"links": [
+			{
+				"type": "Demo",
+				"link": "https://ridmik.news/"
+			}
+		]
 	},
 	{
 		"title": "Boitoi",
 		"description": "Digital publishing platform with a focus on Bangla eBook publishing",
-		"contribution": ["Developed responsive user interfaces for various features", "Used redux for state management", "Integrated rest api data to the user interface"],
-		"techs": ["React JS", "|", "Redux", "|", "Elastic", "|", "Spectre CSS"],
-		"links": [{ "type": "Demo", "link": "https://boitoi.com.bd/" }]
-	},
-	{
-		"title": "Boitoi Admin Panel",
-		"description": "A panel for eBooks management including creating & selling",
-		"contribution": ["Developed user interfaces for various features", "Implemented eBook generation & publication tool", "Integrated rest api data to the user interface"],
-		"techs": ["React JS", "|", "Redux", "|", "Stylus", "|", "Spectre CSS"],
-		"links": [{ "type": "internal" }] 
-	},
-	{
-		"title": "Ridmik News Admin Panel",
-		"description": "A panel facilitating management of news update, review, publish, managing quiz & other contents",
-		"contribution": ["Developed user interfaces for various features", "Implemented automated scrapper for news collection", "Integrated rest api data to the user interface"],
-		"techs": ["React JS", "|", "Stylus", "|", "Spectre CSS"],
-		"links": [{ "type": "internal" }]
-	},
-	{
-		"title": "Ridmik News Android",
-		"description": "Android version of Ridmik News with features like Quiz, news listening, popular videos etc",
-		"contribution": ["Improved the performance of endless scrolling in news feed", "Improved animation of quiz section", "Inplemented new features like weather & covid section"],
-		"techs": ["Android", "|", "MVVM", "|", "Room persistence"],
-		"links": [{ "type": "Demo", "link": "https://play.google.com/store/apps/details?id=ridmik.news" }]
-	},
-	{
-		"title": "Boithok Mobile App",
-		"description": "Bangladeshi video conferencing app for online meeting",
-		"contribution": ["Developed user interfaces for various features", "Added customized features as per requirement", "Maintained & deployed in both android & ios versions"],
-		"techs": ["React Native", "|", "Redux", "|", "Jitsi Meet"],
-		"links": [{ "type": "Demo", "link": "https://play.google.com/store/apps/details?id=bd.gov.bcc.vc" }]
+		"contribution": [
+			"Developed responsive user interfaces for various features",
+			"Used redux for state management",
+			"Integrated rest api data to the user interface"
+		],
+		"techs": [
+			"React JS",
+			"|",
+			"Redux",
+			"|",
+			"Elastic",
+			"|",
+			"Spectre CSS"
+		],
+		"links": [
+			{
+				"type": "Demo",
+				"link": "https://boitoi.com.bd/"
+			}
+		]
 	},
 	{
 		"title": "QuotesHub",
 		"description": "Web portal containing 4000+ quotes of famous people",
-		"contribution": ["Backend api developed in express js under node runtime", "MongoDB has been used to store data", "Frontend developed with next js & tailwind css"],
-		"techs": ["Next JS", "|", "Express JS", "|", "MongoDB", "|", "Tailwind"],
-		"links": [{ "type": "Demo", "link": "https://quoteshub.vercel.app/" }]
+		"contribution": [
+			"Backend api developed in express js under node runtime",
+			"MongoDB has been used to store data",
+			"Frontend developed with next js & tailwind css"
+		],
+		"techs": [
+			"Next JS",
+			"|",
+			"Express JS",
+			"|",
+			"MongoDB",
+			"|",
+			"Tailwind"
+		],
+		"links": [
+			{
+				"type": "Demo",
+				"link": "https://quoteshub.vercel.app/"
+			}
+		]
 	},
 	{
-		"title": "QuotesHub Android",
-		"description": "Android version of QuotesHub web portal",
-		"contribution": ["Viewmodel & livedata have been used", "Developed in Kotlin following MVVM pattern", "Room persistence library has been used to cache data"],
-		"techs": ["Kotlin", "|", "Room Persistence", "|", "Android"],
-		"links": [{ "type": "working" }]
-	},
-	{
-		"title": "Breaking Bad Lite",
-		"description": "Android app showing characters, episodes, quotes & deaths from tv series Breaking Bad & Better Call Saul",
-		"contribution": ["Viewmodel & livedata have been used", "Developed in Kotlin following MVVM pattern", "Room persistence library has been used to cache data"],
-		"techs": ["Kotlin", "|", "Room Persistence", "|", "Android"],
-		"links": [{ "type": "Source Code", "link": "https://github.com/alim1496/breaking-bad-lite" }]
-	},
-	{
-		"title": "Realtime Chat Rooms",
-		"description": "A simple realtime chat application where users can create rooms & chat",
-		"contribution": ["Realtime communication is maintained using socket io", "Server side api developed in express & client in react", "MongoDB has been used to store data"],
-		"techs": ["React JS", "|", "Express JS", "|", "Socket IO", "|", "MongoDB"],
-		"links": [{ "type": "Source Code", "link": "https://github.com/alim1496/realtime-chat-mern" }, { "type": "Demo", "link": "https://rooms-mern.onrender.com" }]
+		"title": "Shopify",
+		"description": "A simple ecommerce demo project",
+		"contribution": [
+			"Developed user interface of all features",
+			"Used state management library with redux toolkit",
+			"Added E2E testing using cypress"
+		],
+		"techs": [
+			"React JS",
+			"|",
+			"Redux Toolkit",
+			"|",
+			"Typescript",
+			"|",
+			"Cypress",
+			"|",
+			"Tailwind"
+		],
+		"links": [
+			{
+				"type": "Source Code",
+				"link": "https://github.com/alim1496/simple-react-ecommerce"
+			},
+			{
+				"type": "Demo",
+				"link": "https://shopify-xrh7.onrender.com/"
+			}
+		]
 	},
 	{
 		"title": "React Simple Clock",
 		"description": "Simple & reusable analog clock component for React",
-		"contribution": ["Reusabe Clock component built with React hooks", "Implemented in both NPM & Yarn", "Comes with properties like custom styles, live & dark mode"],
-		"techs": ["React JS", "|", "Vite JS", "|", "Vitest"],
-		"links": [{ "type": "Source Code", "link": "https://github.com/alim1496/react-simple-clock" }, { "type": "Demo", "link": "https://www.npmjs.com/package/react-simple-clock" }]
+		"contribution": [
+			"Reusabe Clock component built with React hooks",
+			"Implemented in both NPM & Yarn",
+			"Comes with properties like custom styles, live & dark mode"
+		],
+		"techs": [
+			"React JS",
+			"|",
+			"Vite JS",
+			"|",
+			"Vitest"
+		],
+		"links": [
+			{
+				"type": "Source Code",
+				"link": "https://github.com/alim1496/react-simple-clock"
+			},
+			{
+				"type": "Demo",
+				"link": "https://www.npmjs.com/package/react-simple-clock"
+			}
+		]
 	},
 	{
 		"title": "React FAQ Generator",
 		"description": "Simple FAQ section generator for React applications",
-		"contribution": ["Reusabe FAQ component built with typescript", "Implemented in both NPM & Yarn", "Comes with properties like custom styles & dark mode"],
-		"techs": ["React JS", "|", "Rollup", "|", "Typescript", "|", "Vitest"],
-		"links": [{ "type": "Source Code", "link": "https://github.com/alim1496/react-faq-generator" }, { "type": "Demo", "link": "https://www.npmjs.com/package/react-faq-generator" }]
+		"contribution": [
+			"Reusabe FAQ component built with typescript",
+			"Implemented in both NPM & Yarn",
+			"Comes with properties like custom styles & dark mode"
+		],
+		"techs": [
+			"React JS",
+			"|",
+			"Rollup",
+			"|",
+			"Typescript",
+			"|",
+			"Vitest"
+		],
+		"links": [
+			{
+				"type": "Source Code",
+				"link": "https://github.com/alim1496/react-faq-generator"
+			},
+			{
+				"type": "Demo",
+				"link": "https://www.npmjs.com/package/react-faq-generator"
+			}
+		]
+	},
+	{
+		"title": "Realtime Chat Rooms",
+		"description": "A simple realtime chat application where users can create rooms & chat",
+		"contribution": [
+			"Realtime communication is maintained using socket io",
+			"Server side api developed in express & client in react",
+			"MongoDB has been used to store data"
+		],
+		"techs": [
+			"React JS",
+			"|",
+			"Express JS",
+			"|",
+			"Socket IO",
+			"|",
+			"MongoDB"
+		],
+		"links": [
+			{
+				"type": "Source Code",
+				"link": "https://github.com/alim1496/realtime-chat-mern"
+			},
+			{
+				"type": "Demo",
+				"link": "https://rooms-mern.onrender.com"
+			}
+		]
+	},
+	{
+		"title": "Boithok Mobile App",
+		"description": "Bangladeshi video conferencing app for online meeting",
+		"contribution": [
+			"Developed user interfaces for various features",
+			"Added customized features as per requirement",
+			"Maintained & deployed in both android & ios versions"
+		],
+		"techs": [
+			"React Native",
+			"|",
+			"Redux",
+			"|",
+			"Jitsi Meet"
+		],
+		"links": [
+			{
+				"type": "Demo",
+				"link": "https://play.google.com/store/apps/details?id=bd.gov.bcc.vc"
+			}
+		]
+	},
+	{
+		"title": "Ridmik News Android",
+		"description": "Android version of Ridmik News with features like Quiz, news listening, popular videos etc",
+		"contribution": [
+			"Improved the performance of endless scrolling in news feed",
+			"Improved animation of quiz section",
+			"Inplemented new features like weather & covid section"
+		],
+		"techs": [
+			"Android",
+			"|",
+			"MVVM",
+			"|",
+			"Room persistence"
+		],
+		"links": [
+			{
+				"type": "Demo",
+				"link": "https://play.google.com/store/apps/details?id=ridmik.news"
+			}
+		]
+	},
+	{
+		"title": "Breaking Bad Lite",
+		"description": "Android app showing characters, episodes, quotes & deaths from tv series Breaking Bad & Better Call Saul",
+		"contribution": [
+			"Viewmodel & livedata have been used",
+			"Developed in Kotlin following MVVM pattern",
+			"Room persistence library has been used to cache data"
+		],
+		"techs": [
+			"Kotlin",
+			"|",
+			"Room Persistence",
+			"|",
+			"Android"
+		],
+		"links": [
+			{
+				"type": "Source Code",
+				"link": "https://github.com/alim1496/breaking-bad-lite"
+			}
+		]
 	}
 ]
