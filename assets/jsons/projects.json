@@ -1,29 +1,5 @@
 [
 	{
-		"title": "Ridmik News",
-		"description": "Bangladeshi online news portal containing all the latest news",
-		"contribution": [
-			"Developed responsive user interfaces for various features",
-			"Implemented server side rendering for better performance",
-			"Integrated rest api data to the user interface"
-		],
-		"techs": [
-			"React JS",
-			"|",
-			"Redux",
-			"|",
-			"Stylus",
-			"|",
-			"Spectre CSS"
-		],
-		"links": [
-			{
-				"type": "Demo",
-				"link": "https://ridmik.news/"
-			}
-		]
-	},
-	{
 		"title": "Boitoi",
 		"description": "Digital publishing platform with a focus on Bangla eBook publishing",
 		"contribution": [
@@ -102,32 +78,6 @@
 		]
 	},
 	{
-		"title": "React Simple Clock",
-		"description": "Simple & reusable analog clock component for React",
-		"contribution": [
-			"Reusabe Clock component built with React hooks",
-			"Implemented in both NPM & Yarn",
-			"Comes with properties like custom styles, live & dark mode"
-		],
-		"techs": [
-			"React JS",
-			"|",
-			"Vite JS",
-			"|",
-			"Vitest"
-		],
-		"links": [
-			{
-				"type": "Source Code",
-				"link": "https://github.com/alim1496/react-simple-clock"
-			},
-			{
-				"type": "Demo",
-				"link": "https://www.npmjs.com/package/react-simple-clock"
-			}
-		]
-	},
-	{
 		"title": "React FAQ Generator",
 		"description": "Simple FAQ section generator for React applications",
 		"contribution": [
@@ -202,50 +152,6 @@
 			{
 				"type": "Demo",
 				"link": "https://play.google.com/store/apps/details?id=bd.gov.bcc.vc"
-			}
-		]
-	},
-	{
-		"title": "Ridmik News Android",
-		"description": "Android version of Ridmik News with features like Quiz, news listening, popular videos etc",
-		"contribution": [
-			"Improved the performance of endless scrolling in news feed",
-			"Improved animation of quiz section",
-			"Inplemented new features like weather & covid section"
-		],
-		"techs": [
-			"Android",
-			"|",
-			"MVVM",
-			"|",
-			"Room persistence"
-		],
-		"links": [
-			{
-				"type": "Demo",
-				"link": "https://play.google.com/store/apps/details?id=ridmik.news"
-			}
-		]
-	},
-	{
-		"title": "Breaking Bad Lite",
-		"description": "Android app showing characters, episodes, quotes & deaths from tv series Breaking Bad & Better Call Saul",
-		"contribution": [
-			"Viewmodel & livedata have been used",
-			"Developed in Kotlin following MVVM pattern",
-			"Room persistence library has been used to cache data"
-		],
-		"techs": [
-			"Kotlin",
-			"|",
-			"Room Persistence",
-			"|",
-			"Android"
-		],
-		"links": [
-			{
-				"type": "Source Code",
-				"link": "https://github.com/alim1496/breaking-bad-lite"
 			}
 		]
 	}
